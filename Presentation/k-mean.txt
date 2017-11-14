@@ -1,0 +1,64 @@
+a) 1,2
+b) 2,3
+c) 7,8
+d) 8,6
+e) 9,10
+
+c1) 2,3
+c2) 7,8
+
+
+c1 - a) root(square(2-1) + square(3-2))    = root(1+1)    = root(2)
+c1 - d) root(square(2-8) + square(3-6))    = root(36+9)   = root(45)
+c1 - e) root(square(2-9) + square(3-10))   = root(49+49)  = root(98)
+
+c2 - a) root(square(7-1) + square(8-1))    = root(36+49)  = root(85)
+c2 - d) root(square(7-8) + square(8-6))    = root(1+2)    = root(3)
+c2 - e) root(square(7-9) + square(8-10))   = root(4+4)    = root(8)
+
+
+(c1 - a) < (c2 - a)
+(c1 - d) > (c2 - d)
+(c1 - e) > (c2 - e)
+
+So, point (a) assigned to (c1)
+and point (d) and (e) assigned to (c2)
+
+In iteration 1: 
+c1) (2,3) and (1,2)
+c2) (7,8) , (8,6) and (9,10) 
+
+Now recalcualte the centers:
+c1) x:[(2+1)/(2)] = 1.5     y:[(3+2)/(2)] = 2.5
+c2) x:[(7+8+9)/(3)] = 8    y:[(8+6+10)/(3)] = 8
+
+Co-ordinate for ceter:
+c1) (1.5 , 2.5)
+c2) (8.0 , 8.0)
+
+Re-do the calculation of euclidian distance:
+c1 - a) root(square(1.5-1) + square(2.5-2))    = root(0.25+0.25)    = root(0.50)
+c1 - b) root(square(1.5-2) + square(2.5-3))    = root(0.25+0.25)    = root(0.50)
+c1 - c) root(square(1.5-7) + square(2.5-8))    = root(30.25+30.25)  = root(60.50)
+c1 - d) root(square(1.5-8) + square(2.5-6))    = root(42.25+12.25)  = root(54.5)
+c1 - e) root(square(1.5-9) + square(2.5-10))   = root(56.25+56.25)  = root(112.5)
+
+c2 - a) root(square(8-1) + square(8-2))        = root(49+36)        = root(85)
+c2 - b) root(square(8-2) + square(8-3))        = root(36+25)        = root(61)
+c2 - c) root(square(8-7) + square(8-8))        = root(1+0)          = root(1)
+c2 - d) root(square(8-8) + square(8-6))        = root(0+4)          = root(4)
+c2 - e) root(square(8-9) + square(8-10))       = root(1+4)          = root(4)
+
+(c1 - a) < (c2 - a)
+(c1 - b) < (c2 - b)
+(c1 - c) > (c2 - c)
+(c1 - d) > (c2 - d)
+(c1 - e) > (c2 - e)
+
+So points (a) and (b) is assigned to (c1) 
+and points (c) , (d) and (e) is assigned to (c2)
+ 
+Now as we can see that the points to the cluster are same as the previous.
+So we terminate the clustering at this point.
+
+ 
